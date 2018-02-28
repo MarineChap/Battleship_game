@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
-#include "bataillenavale.h"
+#include "battleship.h"
 
 /* declarations */
 int num_boat;
