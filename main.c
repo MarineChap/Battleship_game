@@ -1,7 +1,15 @@
+/**
+ Battleship game : Project for the school ESISAR GRENOBLE INP
+ 
+ @author :Chaput Marine
+ created in march 2014
+ updated in february 2018 (translation program in english)
+ **/
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
-#include "battleship.h"
+#include "bataillenavale.h"
 
 /* declarations */
 int num_boat;
@@ -46,7 +54,6 @@ int main(void)
             
             /* Case : axe choosen doesn't exist */
             if (axe != 0 && axe != 1){
-                system("clear");
                 printf("! impossible axe !\n");
                 continue;
             }
@@ -64,7 +71,6 @@ int main(void)
             
             /* Case : coordinate choosen doesn't exist */
             if (line < 0 || line >= MAX || column < 0 || column >= MAX){
-                system("clear");
                 printf("! non-existent case !\n");
                 printf("Choose again the coordinate of the boat \n");
                 continue;
@@ -122,7 +128,6 @@ int main(void)
             scanf("%d", &line);
             /* Case : coordinate choosen doesn't exist */
             if (line < 0 || line >= MAX || column < 0 || column >= MAX){
-                system("clear");
                 printf("! non-existent case !\n");
                 continue;
             }
